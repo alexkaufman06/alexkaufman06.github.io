@@ -3,9 +3,6 @@ This is a personal website built using the Boostrap Agency theme. View the site 
 ## Setup Instructions:
 
 Clone repository
-```
-python -m SimpleHTTPServer
-```
 Open index.html
 
 ### Author:

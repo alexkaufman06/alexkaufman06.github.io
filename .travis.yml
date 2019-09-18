@@ -17,10 +17,10 @@ before_script:
   - sleep 3 # give xvfb some time to start
   - sudo apt-get update
   - sleep 3 # give time for updates
-  #- sudo apt-get install -y libappindicator1 fonts-liberation
-  # - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo apt-get install -y libappindicator1 fonts-liberation
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   # - wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-  - wget http://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_linux64.zip
+  # - wget http://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_linux64.zip
   #- sudo dpkg -i google-chrome*.deb
   - npm install --dev
   - npm run run & # to run my web server in the background

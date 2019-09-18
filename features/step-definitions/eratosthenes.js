@@ -18,7 +18,7 @@ defineSupportCode(function({ Given, When, Then }) {
   });
 
   Then('I expect that the number of prime numbers returned is correct', function() {
-
+    browser.deleteSession();
   });
 
 });

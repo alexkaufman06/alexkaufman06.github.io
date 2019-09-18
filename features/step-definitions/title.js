@@ -17,6 +17,7 @@ defineSupportCode(function({ Given, When, Then }) {
   Then('I expect that the title of the page is correct', function() {
     var title = browser.getTitle();
     assert.equal(title, "Alex Kaufman | Portfolio");
+    browser.deleteSession();
   });
 
 });

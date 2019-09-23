@@ -11,12 +11,17 @@
     "@wdio/spec-reporter": "^5.12.1",
     "chromedriver": "^77.0.0",
     "wdio-chromedriver-service": "^5.0.2",
-    "wdio-selenium-standalone-service": "0.0.12"
+    "wdio-selenium-standalone-service": "0.0.12",
+    "webdriver-manager": "^12.1.7"
   },
   "scripts": {
     "test": "wdio wdio.conf.js",
     "install-selenium": "selenium-standalone install --version=77.0.3865.40",
-    "serve": "selenium-standalone start"
+    "serve": "selenium-standalone start",
+    "webdriver:update": "webdriver-manager update --versions.chrome 77.0.3865.40",
+    "webdriver:start": "webdriver-manager start --versions.chrome 77.0.3865.40",
+    "webdriver:start:detach": "webdriver-manager start --versions.chrome 77.0.3865.40 --detach",
+    "webdriver:shutdown": "webdriver-manager shutdown"   
   },
   "repository": {
     "type": "git",

@@ -8,7 +8,7 @@ defineSupportCode(function({ Given, When, Then }) {
   });
 
   When('I click the ABOUT ME button', function () {
-    const getStartedButton = $('.btn-xl');
+    const getStartedButton = $('#about-btn');
     getStartedButton.click();
     browser.pause(1500);
     browser.saveScreenshot('./features/errorShots/about-me.png');
